@@ -26,3 +26,5 @@ for my $daud (Daud::_raw_data())
         "<td>$html</td><td>$name</td>", "\n",
         '</tr>', "\n";
 }
+
+print '</table>', "\n";
