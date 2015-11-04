@@ -1,0 +1,10 @@
+Changes
+lib/Daud.pm
+LICENSE
+Makefile.PL
+MANIFEST
+META.yml
+META.json
+README.md
+scripts/make_table.pl
+t/test.t
