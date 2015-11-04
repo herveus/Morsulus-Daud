@@ -1,0 +1,20 @@
+From Morsulus: On Da'ud encoding and DOT ABOVE and DOT BELOW
+
+It was discovered that the Da'ud code {z.} was defined as both Z WITH DOT ABOVE
+and Z WITH DOT BELOW. This is clearly not a good thing. It has been fixed. The
+meaning of a dot in a Da'ud code is now consistent.
+
+{.z} now signifies Z WITH DOT ABOVE, and {z.} signifies Z WITH DOT BELOW, for
+all values of "z" from "a" to "z", upper and lower case (at least as far as 
+those letters are already in the list). This required recoding six names that
+used letters with DOT ABOVE. Those names are (in their new form):
+
+D{zv}iugint{.e} Litovka
+El{.z}bieta Piekarska
+El{.z}bieta Traidenyt{.e}
+{.I}slah bint Yuhannah
+G{u:}rc{u:} {.I}skender
+Umm Davud Mihri bint {.I}skender
+
+The full chart at http://oanda.sca.org/data_symbols.html has been updated
+to reflect these changes.
