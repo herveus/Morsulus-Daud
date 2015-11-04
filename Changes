@@ -1,3 +1,9 @@
+1.01 2015-11-03
+    * redefine z/Z with dot below as .z/.Z
+    * redefine e/E with dot below as .e/.E
+    * add e/E with dot above as e./E.
+    * readd I with dot below as .I
+
 1.00 2015-11-03 
     * Moved to own repository and renamed to Morsulus::Daud
     * Reset version to 1.00
