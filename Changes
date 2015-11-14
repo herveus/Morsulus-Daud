@@ -1,3 +1,11 @@
+1.01 2015-11-03
+    * redefine z/Z with dot above as .z/.Z
+    * add e/E with dot above as .e/.E
+    * readd I with dot below as .I
+    * this means that dot before means DOT ABOVE and dot after means DOT below
+    * also updated master database to fix six names that used characters that were changed
+    * fixed make_table.pl to include closing <table> tag
+
 1.00 2015-11-03 
     * Moved to own repository and renamed to Morsulus::Daud
     * Reset version to 1.00

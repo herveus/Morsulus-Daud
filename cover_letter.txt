@@ -1,0 +1,34 @@
+From Morsulus: On Da'ud encoding and DOT ABOVE and DOT BELOW
+
+It was discovered that the Da'ud code {z.} was defined as both Z WITH DOT ABOVE
+and Z WITH DOT BELOW. This is clearly not a good thing. It has been fixed. The
+meaning of a dot in a Da'ud code is now consistent.
+
+That is, El{z.}bieta Piekarska could have had the dot above or below the z, and 
+trying to look it up in the table of Da'ud codes would not have helped you out.
+
+{.*} now signifies * WITH DOT ABOVE, and {*.} signifies * WITH DOT BELOW, for
+all values of "*" from "a" to "z", upper and lower case (at least as far as 
+those letters are already in the list). 
+
+What changed?
+
+{.e} and {.E} for E WITH DOT ABOVE were added
+{.I} was defined to be LATIN CAPITAL LETTER I WITH DOT ABOVE where it had been {I.}.
+{I.} was redefined to be LATIN CAPITAL LETTER I WITH DOT BELOW as it had been some time ago.
+{.z} and {.Z} were redefined to be LETTER Z WITH DOT ABOVE instead of DOT BELOW.
+
+This required recoding six names that used letters with DOT ABOVE. Those names are now
+coded as:
+
+D{zv}iugint{.e} Litovka
+El{.z}bieta Piekarska
+El{.z}bieta Traidenyt{.e}
+{.I}slah bint Yuhannah
+G{u:}rc{u:} {.I}skender
+Umm Davud Mihri bint {.I}skender
+
+The names have not changed, just the Da'ud codes used for some of their letter.
+
+The full chart at http://oanda.sca.org/data_symbols.html has been updated
+to reflect these changes.
