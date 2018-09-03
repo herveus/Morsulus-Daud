@@ -5,7 +5,7 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 16;
+use Test::More tests => 17;
 ;
 
 BEGIN
@@ -49,3 +49,6 @@ is join ( "", sort @styles ), 'asciihtmllatin1postscriptunicode',
   '...and they appear correct';
 
 is Daud::recode('{i}'), 'i', 'lowercase i without dot OK';
+
+Daud::set_style('ascii');
+is Daud::recode('{o-\'}'), 'o', 'lowercase o with macron and acute to o';

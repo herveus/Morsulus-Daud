@@ -127,7 +127,7 @@ sub recode
 
   foreach my $x (@_) {
     next unless defined $x;
-	$x =~ s:\{(..?)\}:$map->{$1}:ges;
+	$x =~ s:\{(.{1,3})\}:$map->{$1}:ges;
   }
 
   return unless defined wantarray; # void context
@@ -571,6 +571,7 @@ N.;N;1E46;;LATIN CAPITAL LETTER N WITH DOT BELOW
 n.;n;1E47;;LATIN SMALL LETTER N WITH DOT BELOW
 N_;N;1E48;;LATIN CAPITAL LETTER N WITH LINE BELOW
 n_;n;1E49;;LATIN SMALL LETTER N WITH LINE BELOW
+o-';o;1E52;;LATIN SMALL LETTER O WITH MACRON AND ACUTE
 P';P;1E54;;LATIN CAPITAL LETTER P WITH ACUTE
 p';p;1E55;;LATIN SMALL LETTER P WITH ACUTE
 R.;R;1E5A;;LATIN CAPITAL LETTER R WITH DOT BELOW

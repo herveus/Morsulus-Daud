@@ -1,5 +1,6 @@
 Changes
 lib/Daud.pm
+lib/Encode/Daud.pm
 LICENSE
 Makefile.PL
 MANIFEST
