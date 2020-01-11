@@ -25,7 +25,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = qw(
 	
 );
-our $VERSION = '1.0.3';
+our $VERSION = '1.0.4';
 
 my $maps = { ascii => {},
 	html => {},
@@ -97,7 +97,7 @@ sub lose_data # true means data loss
 	return 0 unless $string; # empty/null/undef has no data to lose
 	return 0 unless $string =~ /\{/; # no Daud code -> no data to lose
 	return 1 if get_style eq 'ascii'; # ascii inherently loses data
-	while ($string =~ /\{(..?)\}/g)
+	while ($string =~ /\{(.{1,3})\}/g)
 	{
 		my $daud = $1;
 		return 1 unless exists $map->{$daud}; # no mapping -> lost data
@@ -637,6 +637,10 @@ AE-;AE;01E2;;LATIN CAPITAL LETTER AE WITH MACRON
 ae-;ae;01E3;;LATIN SMALL LETTER AE WITH MACRON
 AE';AE;01FC;;LATIN CAPITAL LETTER AE WITH ACUTE
 ae';ae;01FD;;LATIN SMALL LETTER AE WITH ACUTE
+Dj_;Dj;01E6;;UNDERLINED CAPITAL LETTER DJ
+dj_;dj;01E7;;UNDERLINED SMALL LETTER DJ
+Sh_;Sh;0160;;UNDERLINED CAPITAL LETTER SH
+sh_;sh;0161;;UNDERLINED SMALL LETTER SH
 EOD
 }
 

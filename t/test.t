@@ -5,7 +5,7 @@
 
 # change 'tests => 1' to 'tests => last_test_to_print';
 
-use Test::More tests => 22;
+use Test::More tests => 27;
 ;
 
 BEGIN
@@ -55,5 +55,10 @@ is Daud::recode('{ae-}'), 'ae', 'lower case ae with macron OK';
 is Daud::recode('{ae\'}'), 'ae', 'lower case ae with acute OK';
 is Daud::recode('{AE-}'), 'AE', 'upper case ae with macron OK';
 is Daud::recode('{AE\'}'), 'AE', 'upper case ae with acute OK';
+is Daud::recode('{Dj_}'), 'Dj', 'upper case Dj underlined OK';
+is Daud::recode('{dj_}'), 'dj', 'lower case dj underlined OK';
+is Daud::recode('{Sh_}'), 'Sh', 'upper case Sh underlined OK';
+is Daud::recode('{sh_}'), 'sh', 'lower case sh underlined OK';
+ok Daud::lose_data('{ae\'}'), '{ae\'} is lossy';
 
 Daud::set_style('ascii');
