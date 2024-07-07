@@ -28,7 +28,7 @@ El{.z}bieta Traidenyt{.e}
 G{u:}rc{u:} {.I}skender
 Umm Davud Mihri bint {.I}skender
 
-The names have not changed, just the Da'ud codes used for some of their letter.
+The names have not changed, just the Da'ud codes used for some of their letters.
 
 The full chart at http://oanda.sca.org/data_symbols.html has been updated
 to reflect these changes.
